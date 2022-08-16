@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мотоальбом</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site-container">
+    <header class="header">
+      <nav class="nav header__top">
+        <div class="burger">
+          <div class="burger-line"></div>
+        </div>
+        <a class="logo header__logo" href="#">
+          <picture>
+            <source srcset="img/logo.webp" type="image/webp">
+            <img src="img/logo.png" alt="Лого">
+          </picture>        
+        </a>
+        <ul class="nav-list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="#">Новости</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Блог</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__hero hero">
+        <div class="container">
+          <h1 class="hero__title">Мотоальбом</h1>
+          <h2 class="hero__subtitle">Интересное и полезное для ценителей мототехники</h1>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container container">
+        <div class="post-entry">
+          <div class="post-entry__img">
+            <picture>
+              <source srcset="img/img--honda-x-adv.webp" type="image/webp">
+              <img src="img/img--honda-x-adv.jpg" alt="Honda X-ADV">
+            </picture> 
+          </div>
+          <div class="post-entry__text">
+            <a class="post-entry__title" href="#">Обзор мотоцикла Honda X-ADV</a>
+            <div class="post-entry__meta meta-block">
+              <div class="meta-block__date">2020-08-06</div>
+              <div class="meta-block__user">admin</div>
+            </div>
+            <div class="post-entry__content">
+              Не все мотопроизводители готовы экспериментировать с различными классами мотоциклов, но есть и те, которые намеренно идут на такой шаг, что в последствии приводит к успеху. Ярким примером такого подхода является модель X-ADV от Honda.
+            </div>
+            <a class="post-entry__read-more" href="#">Читать далее</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__text">Copyrights © 2020 Копирование любого мотериала запрещено без разрешения владельца сайта. Сайт использует технологигию Cockie, находясь на сайте, вы даете свое согласие на использование данной технологии</div>
+    </footer>
+  </div>
+</body>
+</html>
