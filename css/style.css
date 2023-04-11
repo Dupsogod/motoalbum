@@ -147,6 +147,10 @@ body::-webkit-scrollbar-thumb {
   list-style-type: none;
 }
 
+.dropdown-block-list__item {
+  position: relative;
+}
+
 .dropdown-block-list__item:not(:last-child) {
   border-bottom: 1px solid var(--color-gray-130);
 }
@@ -169,6 +173,26 @@ body::-webkit-scrollbar-thumb {
 .dropdown-block-list__link:focus {
   outline: 3px solid var(--color-interactive-accent);
   outline-offset: 3px;
+}
+
+.inside-dropdown-block__inside {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  padding-left: 0;
+  list-style-type: none;
+  border: 1px solid var(--color-gray-130);
+  background-color: var(--color-light);
+  transform: translateX(0);
+  opacity: 0;
+  transform-origin: top;
+  transition: opacity .05s linear, transform .1s linear;
+}
+
+.inside-dropdown-block:hover .inside-dropdown-block__inside {
+  opacity: 1;
+  transform: translateX(1);
 }
 
 .burger {
